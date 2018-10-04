@@ -27,18 +27,21 @@
 	</header>
 <main>
 	<section id = "Why">
+	<div>
 		<h1> A DataSet About College Majors</h1>
-		<p><b>What kind of Data am i researching about and why?</b> </br></br>
-		My name is Max Juarez and i'm currently enrolled in Lehman College. I'm currently pursuing a degree in Computer Science while also trying to minor in mathematics. Since the day i had first enrolled in my very first class, i am proud to say that i have debated on pursuing in a different degree rather than trying to major in Computer Science thus the DataSet about College Majors piqued my interest. 
-		</br>
-		</br>
-		<b>Why did it piqued my interest? </b>
-		</br>
-		</br>
-		I've always thought that technology will soon evolve to something greater that might eventually shape the whole world into something magnificent so i wanted to see whether or not Computer Science had a lot of enrolls. I was also interested in other majors that i wanted to try out other than Computer Science.</p>
-		<ol>	
-			<h3>This dataset contains a few headers with a description as to what they are meant to show (purposes)</h4>
-			<h1>The headers are as follow:</h1>
+		<h3>What kind of Data am i researching about and why?</h3>
+		<p>
+			My name is Max Juarez and i'm currently enrolled in Lehman College. I'm currently pursuing a degree in Computer Science while also trying to minor in mathematics. Since the day i had first enrolled in my very first class, i am proud to say that i have debated on pursuing in a different degree rather than trying to major in Computer Science thus the DataSet about College Majors piqued my interest. 
+		</p>
+		<h3>Why did it piqued my interest?</h3>
+		<p>
+			I've always thought that technology will soon evolve to something greater that might eventually shape the whole world into something magnificent so i wanted to see whether or not Computer Science had a lot of enrolls. I was also interested in other majors that i wanted to try out other than Computer Science.
+		</p>
+	</div>
+	<div>
+		<h3>This dataset contains a few headers with a description as to what they are meant to show (purposes)</h3>
+		<h3>The headers are as follow:</h3>
+		<ol>
 			<li>Major_code - Major Code, FO1DP in ACS PUMS</li>
 			<li>Major - Major description</li>
 			<li>Major_category - Category of major from Carnevale et al</li>
@@ -50,13 +53,86 @@
 			<li>Median - Median earnings of full-time, year-round workers</li>
 			<li>P25th - 25th percentile of earnigns</li>
 			<li>P75th - 75th percentile of earnings</li>
-	</ol>
-	<h1>Unanswered questions i came up with?</h1>
-	<p>What are the top 10 Majors with the most people enrolled in percentage and why do you (i) think these majors are the most popular? </br></br> 
-	The major with the most Employed?</br></br>
-	The Major with the most unemployed?</br></br>
-	Which of the majors have the least unemployment rate?</br></br>
-</p> 
+		</ol>
+	</div>
+	<div>
+		<h1>Unanswered questions i came up with?</h1>
+		<p id="What">What are the top 10 Majors with the most people enrolled in percentage and why do you (i) think these majors are the most popular? </br></br> 
+		The major with the most Employed?</br></br>
+		The Major with the most unemployed?</br></br>
+		Which of the majors have the least unemployment rate?</br></br>
+		</p> 
+	</div>
+	</section>
+
+
+
+
+
+	<section id="Total">
+		<div>
+		<h1> What is "Total"?</h1>
+		<p>The total is defined as the amount of people that are majoring in a specific major, such as Computer Science, Nursing, Pharmacology, Geological and Geophysical Engineering, and so on. The total amount of students majoring in a specific kind of major is extremely valuable to determine the most popular type of degree and the least popular type of degree. The mean, standard deviation, skewness and kurtosis are: 
+			<br>
+			<br>
+			<b>Mean:</b> 230256.6
+			<br>
+			<b>Standard Deviation:</b> 422068.5 
+			<br>
+			<b>Skewness:</b> 3.591402 
+			<br>
+			<b>Kurtosis:</b> 15.98407 
+
+		</p>
+		<h1>BoxPlot and Histogram of the data "Total"</h1>
+			<img id="BoxT" src="Data/Boxplot_Total.png"/>
+			<p> The boxplot used to plot the column <b>Total</b> of all-ages.csv is essential to understand the amount of students who ended up with pursing a major. It appears as if the boxplot was the one and only graph that truly captured the data's purpose. One can easily find the outliers, datum detached from the rest of the data that looked inconsistent and it appears that the graph captured 24 outliers, data that exceeded an amount that other data did not. These 24 outliers were the top 24 majors that were popular among other majors.</p>
+			<img id="HistT" src="Data/Hist_Total.png"/>
+			<p>The data's histogram has a skewness of 3.591402 and a kurtosis of 15.98. The kurtosis's value appears to categorize the data as a <b>platykurtic</b> and a positive skewness which let me to believe that the data is slightly skewed to the right. Although, it appears that the graph has a random distribution. My assumption is that the histogram didn't help as much as i thought it would've had.</p>
+		</div>
+	</section>
+	<section id="Employed">
+		<div>
+		<h1> What is "Employed"?</h1>
+		<p>The Employed column of my dataframe is defined as the amount of people that are employed by the major they had majored. The mean, standard deviation, skewness and kurtosis are: 
+			<br>
+			<br>
+			<b>Mean:</b> 166162
+			<br>
+			<b>Standard Deviation:</b> 307324.4 
+			<br>
+			<b>Skewness:</b> 3.769423 
+			<br>
+			<b>Kurtosis:</b> 18.03576 
+
+		</p>
+		<h1>BoxPlot and Histogram of the data "Employed"</h1>
+			<img id="BoxE" src="Data/Boxplot_E.png"/>
+			<p> The boxplot is similar to the <b>Total</b> boxplot and it helps the viewer see the pieces of data that are detached from the box's 4th quarter. The 24 outliers are the same outliers that the column <b>Total</b> displayed on it's own boxplot graph thus implying that the most popular major with the most total number of majors are most likely be able to seek a job than those majors that aren't as popular as they seem to be on the boxplot. These outliers had values greater than 350,000.</p>
+			<img id="HistE" src="Data/Hist_E.png"/>
+			<p>Similar to the <b>Total</b> boxplot, a positive skewness and postive kurtosis made me believe that the graph was slightly skewed towards the right and had a platykurtic curve. Yet, the histogram displayed a random distribution. The only differences i saw on the <b>Total's</b> histogram and <b>Employed's</b> histogram are the indexes. The indexes displays the number of employed/total students.</p>
+		</div>
+	</section>
+	<section id="Unemployment_rate">
+		<div>
+		<h1> What is "Unemployement_rate"?</h1>
+		<p>The Unemployed_rate column of my dataframe is defined as the rate in which unemployment happens on each majors listed on the all-ages.csv dataframe. The equation for unemployment rate is given by (Unemployed / (Unemployed + Employed)). The mean, standard deviation, skewness and kurtosis are:  
+			<br>
+			<br>
+			<b>Mean:</b> 0.05735545
+			<br>
+			<b>Standard Deviation:</b> 0.0191771 
+			<br>
+			<b>Skewness:</b> 0.6928492 
+			<br>
+			<b>Kurtosis:</b> 3.644075
+		</p>
+		<h1>BoxPlot and Histogram of the data "Unemployement_rate"</h1>
+			<img id="BoxUR" src="Data/Boxplot_UR.png"/>
+			<p> The boxplot of <b>Unemployement_rate</b> is unique in that it was different than the boxplot of both <b>Total</b> and <b>Employed</b>. This is significantly great because it shows 4 outliers that are dissimilar than the outliers of <b>Total</b> and <b>Employed</b> and when something is dissimilar, unexpected things can be found. The boxplot shows the percentage(s) of the <b>Unemployement_rate</b>, a small number than the amount of students since the amount of students exceeded more than 350,000, the Unemployment_rate did not. The data has a standard deviation of 0.019, a number that is quite closer to 0. The standard deviation shows how not spread out the data are from one another as seen on the boxplot. </p>
+			<img id="BoxUR" src="Data/Hist_UR.png"/>
+			<p> The histogram is also another plot that is different than both <b>Total</b> and <b>Employed</b> for the same reason as the numbers of <b>Unemployement_rate</b> being small digits. The data's mean is 0.057 as shawn in the histogram with a standard deviation of 0.019. The skewness however is 0.69 slightly closer to 0. A skewness of 0 has a normal distribution but because the <b>Unemployement_rate's</b> skewness is not equal to 0, it can be assume that the distribution is slight skewed towards the right. Similar to the kurtosis of both <b>Total</b> and <b>Employed</b>, the data has a platykurtic curve which sadly enough contradicts what the histogram shows.</p>
+		</div>
 	</section>
 	<section id="Citation">
 		<p>Citation:</br></br> I want to give a huge thanks to <a href="https://github.com/fivethirtyeight">FiveThirdyEight</a> on Github for the huge amount of DataSets that was posted to the public. Without this, i wouldn't had been able to come across the <a href="https://github.com/fivethirtyeight/data/tree/master/college-majors">all-ages.csv</a></br></br> Also, the all-ages.csv was based on an article called <a href="https://fivethirtyeight.com/features/the-economic-guide-to-picking-a-college-major/">The Economic Guide To Picking A College Major</a> which also has a bunch of information regarding college majors and goes in depth on the good and bad sides of some majors.</p>

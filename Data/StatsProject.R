@@ -44,7 +44,7 @@ hist(AllAges$Employed,breaks = 150,xlab = "Number of Employed Students",main = "
 #-------------------Third numerical data column--------------------------#
 ## Mean and standard Deviation for AllAges$Unemployment_rate
 #Step 3: Using AllAges$Unemployment_rate to find the mean and standard
-#Deviation for the column Employed
+#Deviation for the column Unemployment_rate
 MeanUnemploymentR<-mean(AllAges$Unemployment_rate)
 SdUnemploymentR <-sd(AllAges$Unemployment_rate)
 MeanUnemploymentR

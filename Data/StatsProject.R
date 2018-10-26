@@ -61,3 +61,5 @@ boxplot.stats(AllAges$Unemployment_rate)$out
 hist(AllAges$Unemployment_rate,breaks = 50,xlab = "Percentage of Unemployment rate", 
      main = "Unemployment Rate per Majors")
 
+#PROJECT MILESTONE 5:
+pareto.chart(table(AllAges[3]),main = "Pareto Char for Major Categories")

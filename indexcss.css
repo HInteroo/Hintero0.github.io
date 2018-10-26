@@ -40,7 +40,7 @@ div{
 #What{
 	text-indent: 0px;
 }
-#BoxT,#HistT,#BoxE,#HistE,#BoxUR,#HistUR{
+#BoxT,#HistT,#BoxE,#HistE,#BoxUR,#HistUR,#PareTo{
 	margin-top: 15px;
 	float: center;
 	width:80%;
@@ -71,7 +71,7 @@ a:hover{
 	background-color: gray;
 	padding-bottom: 60px
 }
-#Why,#Citation,#Total,#Employed,#Unemployment_rate{
+#Why,#Citation,#Total,#Employed,#Unemployment_rate,#Pare_to{
 	background-color:#e3e3e3;
 	padding: 0px,20px,0,20px;
 	border-style: solid;

@@ -62,4 +62,6 @@ hist(AllAges$Unemployment_rate,breaks = 50,xlab = "Percentage of Unemployment ra
      main = "Unemployment Rate per Majors")
 
 #PROJECT MILESTONE 5:
+install.packages("qcc") #To use pareto.chart()
+library(qcc)
 pareto.chart(table(AllAges[3]),main = "Pareto Char for Major Categories")

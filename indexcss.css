@@ -42,8 +42,8 @@ div{
 }
 #BoxT,#HistT,#BoxE,#HistE,#BoxUR,#HistUR,#PareTo{
 	margin-top: 15px;
-	float: center;
-	width:100%;
+	margin-left: 150px;
+	width:70%;
 }
 p{
 

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>College Major Statistics</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="indexcss.css" type="text/css">
+	<link rel="stylesheet" href="NavS.css" type="text/css" media="screen and (max-width:1030px)">
+	<link rel="stylesheet" href="NavL.css" type="text/css" media="screen and (min-width:1029px)">
+	<script async type="text/javascript" src="navbar.js"></script>
+ 
+</head>
+<body>
+<section id = "Home">	
+<nav id="nav">
+	<img id="logo" src="Education/education_logo.png"/>
+	<div id="navicon" onclick="toggleNav();">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+	<a href="#Home"></a>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<!-- <li><a href="#Why">Why?</a></li> -->
+		<li><a href="index.html">Total</a></li>
+		<li><a href="Employed">Employed</a></li>
+		<li><a href="ThirdP.html">Unemployment rate</a></li>
+		<li><a href="AnalysisHypothesis.html">Analysis & Hypothesis</a></li>
+	</ul>
+</nav>
+
+</section>
+	<header id="Education">	
+		<h1 class="Title">College Majors</h1>
+	</header>
+<main>
+	<section id="Employed">
+		<div>
+		<h1> What is "Employed"?</h1>
+		<p>The Employed column of my dataframe is defined as the amount of people that are employed by the major they had majored. The mean, standard deviation, skewness and kurtosis are: 
+			<br>
+			<br>
+			<b>Mean:</b> 166162
+			<br>
+			<b>Standard Deviation:</b> 307324.4 
+			<br>
+			<b>Skewness:</b> 3.769423 
+			<br>
+			<b>Kurtosis:</b> 18.03576 
+
+		</p>
+		<h1>BoxPlot and Histogram of the data "Employed"</h1>
+			<img id="BoxE" src="Data/Boxplot_E.png" class="center"/>
+			<p> The boxplot is similar to the <b>Total</b> boxplot and it helps the viewer see the pieces of data that are detached from the box's 4th quarter. The 24 outliers are the same outliers that the column <b>Total</b> displayed on it's own boxplot graph thus implying that the most popular major with the most total number of majors are most likely be able to seek a job than those majors that aren't as popular as they seem to be on the boxplot. These outliers had values greater than 350,000.</p>
+			<img id="HistE" src="Data/Hist_E.png " class="center"/>
+			<p>Similar to the <b>Total</b> boxplot, a positive skewness and postive kurtosis made me believe that the graph was slightly skewed towards the right and had a platykurtic curve. Yet, the histogram displayed a random distribution. The only differences i saw on the <b>Total's</b> histogram and <b>Employed's</b> histogram are the indexes. The indexes displays the number of employed/total students.</p>
+		<h1>Computing a confidence interval for the "Employed" # 2: </h1>
+			<p> Knowing that the mean of the data "Employed" has mean = 166162, standard deviation = 307324.4, and the dataset has a length of n = 173. We can compute the margin of error by adding/subtracting the mean from the confidence level times the  standard deviation over the square root of n (230256.6 ± 1.959964 * 307324.4/sqrt(173)) which gives us the range where the true mean lands on: [120366.6, 211957.4].</p>
+
+		</div>
+	</section>
+</main>
+</body>
+</html>

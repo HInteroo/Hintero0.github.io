@@ -1,0 +1,25 @@
+
+nav li{
+	display: inline;
+	padding-right:40px;
+	padding-left: 40px;
+	list-style-type: none;
+	color: white;
+}
+
+nav li a{
+
+	text-decoration: none;
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+#logo{
+	margin: 10px 10px 1px 10px;
+	float: left;
+	width:auto;
+	height: 50px;
+}
+div{
+	border-style: solid;
+}

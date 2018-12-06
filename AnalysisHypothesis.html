@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>College Major Statistics</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="indexcss.css" type="text/css">
+	<link rel="stylesheet" href="NavS.css" type="text/css" media="screen and (max-width:1030px)">
+	<link rel="stylesheet" href="NavL.css" type="text/css" media="screen and (min-width:1029px)">
+	<script async type="text/javascript" src="navbar.js"></script>
+ 
+</head>
+<body>
+<section id = "Home">	
+<nav id="nav">
+	<img id="logo" src="Education/education_logo.png"/>
+	<div id="navicon" onclick="toggleNav();">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+	<a href="#Home"></a>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<li><a href="index.html">Total</a></li>
+		<li><a href="SecondP.html">Employed</a></li>
+		<li><a href="ThirdP.html">Unemployment rate</a></li>
+		<li><a href="#AnalysisHypothesis">Analysis & Hypothesis</a></li>
+	</ul>
+</nav>
+
+</section>
+	<header id="Education">	
+		<h1 class="Title">College Majors</h1>
+	</header>
+<main>
+	<section id="#AnalysisHypothesis">
+		<div>
+		<h1> Hypothesis</h1>
+		<p>The total is defined as the amount of people that are majoring in a specific major, such as Computer Science, Nursing, Pharmacology, Geological and Geophysical Engineering, and so on. The total amount of students majoring in a specific kind of major is extremely valuable to determine the most popular type of degree and the least popular type of degree. The mean, standard deviation, skewness and kurtosis are: 
+			<br>
+			<br>
+			<b>Mean:</b> 230256.6
+			<br>
+			<b>Standard Deviation:</b> 422068.5 
+			<br>
+			<b>Skewness:</b> 3.591402 
+			<br>
+			<b>Kurtosis:</b> 15.98407 
+
+		</p>
+		<h1>BoxPlot and Histogram of the data "Total"</h1>
+			<img id="BoxT" src="Data/Boxplot_Total.png" class="center"/>
+			<p> The boxplot used to plot the column <b>Total</b> of all-ages.csv is essential to understand the amount of students who ended up with pursing a major. It appears as if the boxplot was the one and only graph that truly captured the data's purpose. One can easily find the outliers, datum detached from the rest of the data that looked inconsistent and it appears that the graph captured 24 outliers, data that exceeded an amount that other data did not. These 24 outliers were the top 24 majors that were popular among other majors.</p>
+			<img id="HistT" src="Data/Hist_Total.png" class="center"/>
+			<p>The data's histogram has a skewness of 3.591402 and a kurtosis of 15.98. The kurtosis's value appears to categorize the data as a <b>platykurtic</b> and a positive skewness which let me to believe that the data is slightly skewed to the right. Although, it appears that the graph has a random distribution. My assumption is that the histogram didn't help as much as i thought it would've had.</p>
+		<h1>Computing a confidence interval for the "Total" # 1: </h1>
+			<p> Knowing that the mean of the data "Total" is mean = 230256.6, the standard deviation = 422068.5, and the dataset has a length of n = 173. We can compute the margin of error by adding/subtracting the mean from the confidence level times the  standard deviation over the square root of n (230256.6 ± 1.959964 * 422068.5/sqrt(173)) which gives us the range where the true mean lands on: [167362.8, 293150.4].</p>
+		</div>
+	</section>
+	<section id="Pare_to">
+		<div>
+		<h1> What is a "Pareto chart"?</h1>
+		<p> The Pareto principle which is commonly reffered to as the <b>80/20 rule</b> or <b>The Law of The Vital Few</b> was first noted by an Italian Economist Vilfredo Pareto who showed that approximately 80% of the land in Italy was owned by 20% of the population and to his surprise, when surveying other countries, had a similar distribution applied. Thus, the Pareto Principle has been applied to many problems. I will apply the Pareto chart in order to grasp an understanding of what the categorical variable in my AllAges dataset consist of.</p>
+		<h1>The Pareto chart for my Quantative data: Major</h1>
+			<img id="PareTo" src="Data/PareToChart.png" class="center"/>
+			<p> The pareto chat is quite different than other graphs. The differences can be spot on if one where to look at the two contrasting y-variables, the frequency on the left-side of the graph and the commulative percentage on the right-side of the graph. The commulative percentage expresses the frequency distribution within each interval. The frequency on the left side of the graph summarizes the highest amount of majors in that particularly major category. My pareto chart shows 14 different kind of major categories. In each major categories, there are different kind of studies that that particularly major offers. For example, a Computer And Mathematics major has 11 different kind of studies one might be able to major such as Computer Science, Applied Mathematics, Mathematics, etc...</p>
+		</div>
+	</section>
+</main>
+</body>
+</html>

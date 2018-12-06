@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>College Major Statistics</title>
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="indexcss.css" type="text/css">
+	<link rel="stylesheet" href="NavS.css" type="text/css" media="screen and (max-width:1030px)">
+	<link rel="stylesheet" href="NavL.css" type="text/css" media="screen and (min-width:1029px)">
+	<script async type="text/javascript" src="navbar.js"></script>
+ 
+</head>
+<body>
+<section id = "Home">	
+<nav id="nav">
+	<img id="logo" src="Education/education_logo.png"/>
+	<div id="navicon" onclick="toggleNav();">
+		<div class="bar1"></div>
+		<div class="bar2"></div>
+		<div class="bar3"></div>
+	</div>
+	<a href="#Home"></a>
+	<ul>
+		<li><a href="index.html">Home</a></li>
+		<!-- <li><a href="#Why">Why?</a></li> -->
+		<li><a href="index.html">Total</a></li>
+		<li><a href="SecondP.html">Employed</a></li>
+		<li><a href="#Unemployment_rate">Unemployment rate</a></li>
+		<li><a href="AnalysisHypothesis.html">Analysis & Hypothesis</a></li>
+	</ul>
+</nav>
+
+</section>
+	<header id="Education">	
+		<h1 class="Title">College Majors</h1>
+	</header>
+<main>
+	<section id="Unemployment_rate">
+		<div>
+		<h1> What is "Unemployement_rate"?</h1>
+		<p>The Unemployed_rate column of my dataframe is defined as the rate in which unemployment happens on each majors listed on the all-ages.csv dataframe. The equation for unemployment rate is given by (Unemployed / (Unemployed + Employed)). The mean, standard deviation, skewness and kurtosis are:  
+			<br>
+			<br>
+			<b>Mean:</b> 0.05735545
+			<br>
+			<b>Standard Deviation:</b> 0.0191771 
+			<br>
+			<b>Skewness:</b> 0.6928492 
+			<br>
+			<b>Kurtosis:</b> 3.644075
+		</p>
+		<h1>BoxPlot and Histogram of the data "Unemployement_rate"</h1>
+			<img id="BoxUR" src="Data/Boxplot_UR.png" class="center"/>
+			<p> The boxplot of <b>Unemployement_rate</b> is unique in that it was different than the boxplot of both <b>Total</b> and <b>Employed</b>. This is significantly great because it shows 4 outliers that are dissimilar than the outliers of <b>Total</b> and <b>Employed</b> and when something is dissimilar, unexpected things can be found. The boxplot shows the percentage(s) of the <b>Unemployement_rate</b>, a small number than the amount of students since the amount of students exceeded more than 350,000, the Unemployment_rate did not. The data has a standard deviation of 0.019, a number that is quite closer to 0. The standard deviation shows how not spread out the data are from one another as seen on the boxplot. </p>
+			<img id="BoxUR" src="Data/Hist_UR.png" class="center"/>
+			<p> The histogram is also another plot that is different than both <b>Total</b> and <b>Employed</b> for the same reason as the numbers of <b>Unemployement_rate</b> being small digits. The data's mean is 0.057 as shawn in the histogram with a standard deviation of 0.019. The skewness however is 0.69 slightly closer to 0. A skewness of 0 has a normal distribution but because the <b>Unemployement_rate's</b> skewness is not equal to 0, it can be assume that the distribution is slight skewed towards the right. Similar to the kurtosis of both <b>Total</b> and <b>Employed</b>, the data has a platykurtic curve which sadly enough contradicts what the histogram shows.</p>
+		<h1>Computing the confidence interval for the "Unemployement_rate" # 3: </h1>
+			<p> Knowing that the mean of the data "Unemployement_rate" has mean = 0.05735545, standard deviation = 0.0191771, and the dataset has a length of n = 173. We can compute the margin of error by adding/subtracting the mean from the confidence level times the  standard deviation over the square root of n (0.05735545 ± 1.959964 * 0.0191771/sqrt(173)) which gives us the range where the true mean lands on: [0.05449781, 0.0602131].</p>
+
+		</div>
+	</section>
+
+</main>
+</body>
+</html>

@@ -15,9 +15,6 @@ html {
 	background-color: black; 
 	color: black;
 }
-#What{
-	text-indent: 0px;
-}
 #BoxT,#HistT,#BoxE,#HistE,#BoxUR,#HistUR,#PareTo{
 	margin-top: 15px;
 	width:70%;
@@ -48,9 +45,8 @@ a:hover{
 	border-radius: 5px;
 	text-decoration: none;
 }
-#Why,#Citation,#Total,#Employed,#Unemployment_rate,#Pare_to{
+#Why,#Citation,#Total,#Employed,#Unemployment_rate,#Analysis,#AnalysisHypothesis{
 	background-color:white;
-	/*padding: 0px,10px,0,10px;*/
 	border-style: solid;
 
 }

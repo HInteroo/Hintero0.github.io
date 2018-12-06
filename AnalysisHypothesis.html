@@ -35,28 +35,49 @@
 		<h1 class="Title">College Majors</h1>
 	</header>
 <main>
-	<section id="#AnalysisHypothesis">
+	<section id="AnalysisHypothesis">
 		<div>
-		<h1> Hypothesis</h1>
-		<p>The total is defined as the amount of people that are majoring in a specific major, such as Computer Science, Nursing, Pharmacology, Geological and Geophysical Engineering, and so on. The total amount of students majoring in a specific kind of major is extremely valuable to determine the most popular type of degree and the least popular type of degree. The mean, standard deviation, skewness and kurtosis are: 
+			<h1> Hypothesis</h1>
+			<p>A statistical hypothesis is an assumption about a data's population mean or a standard deviation. In order for one to calculate and predict or assume such hypothesis, they must know the mean, standard deviation and the type of confidence interval one wants to conduct a statistical experiment. In my data, AllAges.csv, I will conduct 3 hypotheses about said data. </p>
 			<br>
-			<br>
-			<b>Mean:</b> 230256.6
-			<br>
-			<b>Standard Deviation:</b> 422068.5 
-			<br>
-			<b>Skewness:</b> 3.591402 
-			<br>
-			<b>Kurtosis:</b> 15.98407 
 
-		</p>
-		<h1>BoxPlot and Histogram of the data "Total"</h1>
-			<img id="BoxT" src="Data/Boxplot_Total.png" class="center"/>
-			<p> The boxplot used to plot the column <b>Total</b> of all-ages.csv is essential to understand the amount of students who ended up with pursing a major. It appears as if the boxplot was the one and only graph that truly captured the data's purpose. One can easily find the outliers, datum detached from the rest of the data that looked inconsistent and it appears that the graph captured 24 outliers, data that exceeded an amount that other data did not. These 24 outliers were the top 24 majors that were popular among other majors.</p>
-			<img id="HistT" src="Data/Hist_Total.png" class="center"/>
-			<p>The data's histogram has a skewness of 3.591402 and a kurtosis of 15.98. The kurtosis's value appears to categorize the data as a <b>platykurtic</b> and a positive skewness which let me to believe that the data is slightly skewed to the right. Although, it appears that the graph has a random distribution. My assumption is that the histogram didn't help as much as i thought it would've had.</p>
-		<h1>Computing a confidence interval for the "Total" # 1: </h1>
-			<p> Knowing that the mean of the data "Total" is mean = 230256.6, the standard deviation = 422068.5, and the dataset has a length of n = 173. We can compute the margin of error by adding/subtracting the mean from the confidence level times the  standard deviation over the square root of n (230256.6 ± 1.959964 * 422068.5/sqrt(173)) which gives us the range where the true mean lands on: [167362.8, 293150.4].</p>
+			<h1>First Hypothesis:</h1>
+			<p>The data's column "total" is an "Integer" type of class that states the amount of Students enrolled in a specific type of field/major. In this hypothesis, i am assuming that the true population average is different from 300,000.0 meaning that the average of students in each major is 300,000.0. My question now is, is there any evidence that the average total of students is 300,000.0 and if so, has it changed? In this hypothesis, i will use a 95% confidence interval.
+			<br><br>
+			H0: No change. 300,000.0 is true population mean
+				<br>
+			H1: Changes has been made.
+			</p>
+			<br>
+			<img id="SS1" src="Education/ScreenShot1.png"/>
+			<br>
+			<p>The P-value in above's figure states that it is in between 5-0 and thus we reject the null hypothesis. In conclusion, we can predict that the average is different from 300,000.0 students per major and that because the mean (230256.6) is less than 300,000, not only is the true mean different, but it has decreased overtime.</p>
+			<br>
+			<h1>Second Hypothesis:</h1>
+			<p>The data's column "Unemployment_rate" is a "numberic" type of class that states the amount of unemployment rate of each individual field/major. In this hypothesis, i am assuming that the true population average is different from 0.55 meaning that the average unemployment rate in each major is 0.55. My question now is, is there any evidence that suggest that the average unemployment rate of each major is 0.55 and if so, has it changed? In this hypothesis, i will use a 95% confidence interval.
+			<br><br>
+			H0: No change. 0.55 is true population mean
+				<br>
+			H1: Changes has been made.
+			</p>
+			<br>
+			<img id="SS2" src="Education/ScreenShot2.png"/>
+			<br>
+			<p>The P-value in above's figure states that it is in between 5-0 and thus we reject the null hypothesis. In conclusion, we can predict that the average is different from 0.55 unemployment rate of each major and that because the mean (0.05735545) is greater than 0.55 (our assumption), not only is the true mean different, but it has increased overtime.</p>
+			<br>
+			<h1>Third Hypothesis:</h1>
+			<p>The data's columns "Employed" and "Unemployed" are both classed as "integer". The employed columns states the number of employed students who received a job after finishing school whilst the unemployed column states the amount of unemployment students on each individual field/major. In this hypothesis, i am assuming that the mean of both columns "Employed" and "Unemployed" are both equal. In other words, both employed and unemployment in each individual major/field are the same. My question now is, is there any evidence that suggest that the average are the same? In this hypothesis, i will use a 95% confidence interval, assume non-equal variances and using a Two-sided test.
+			<br><br>
+			H0: mean of employed students = mean of unemployed students of each majors
+				<br>
+			H1: Employed's mean does not equal to the mean of unemployed students.
+			</p>
+			<br>
+			<img id="SS3" src="Education/ScreenShot3.png"/>
+			<br>
+			<p>The P-value in above's figure states that it is in between 5-0 and thus we reject the null hypothesis meaning that the alternative hypothesis is instead accepted. This means that the mean of both Employed and unemployed are both different than each other. This is pretty obvious because the values of Employed are 100x bigger than the values in unemployed.</p>
+			<br>
+
 		</div>
 	</section>
 	<section id="Pare_to">

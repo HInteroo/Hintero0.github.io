@@ -3,47 +3,29 @@
 	padding: 5;
 	color:black;
 }
-html { 
-	background-color: #b5b5b5; 
-	color: black;
-
-}
 nav{
 	width:100%;
 	text-align: center;
 	text-transform: uppercase;
-	background-color: #eaeaea;
+	background-color: black;
 	position: fixed;
 }
 
-nav li{
-	list-style-type: none;
-	color: white;
-}
-
-nav li a{
-
-	text-decoration: none;
+html { 
+	background-color: black; 
 	color: black;
-	font-weight: bold;
-}
-
-#logo{
-	margin: 10px 10px 1px 10px;
-	float: left;
-	width:auto;
-	height: 50px;
-}
-div{
-	border-style: solid;
 }
 #What{
 	text-indent: 0px;
 }
 #BoxT,#HistT,#BoxE,#HistE,#BoxUR,#HistUR,#PareTo{
 	margin-top: 15px;
-	margin-left: 150px;
 	width:70%;
+}
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 p{
 
@@ -60,20 +42,15 @@ li{
 	margin-top: 2%;
 }
 a:hover{
-	color: grey;
+	color: #6480b7;
 	font-weight: bold;
-	font-size: 1.3em;
-	padding: .2em;
+	font-size: 1em;
 	border-radius: 5px;
 	text-decoration: none;
 }
-#nav1{
-	background-color: gray;
-	padding-bottom: 60px
-}
 #Why,#Citation,#Total,#Employed,#Unemployment_rate,#Pare_to{
-	background-color:#e3e3e3;
-	padding: 0px,20px,0,20px;
+	background-color:white;
+	/*padding: 0px,10px,0,10px;*/
 	border-style: solid;
 
 }
@@ -87,27 +64,21 @@ a:hover{
 .Title{
 	color:white;
 	font-size: 30pt;
-}
-.Title,.Quote{
 	text-align: center;
 	font-weight: bold;
 	background-color:none;
 	border-style: none;
 }
-.MQuote, .Quote{
-	font-size: 17pt;
-	color:#6666ff;
-}
 
 #Education{
-	background-image: url(https://www.alp-scs.ru/assets/images/Montazh%20SKS/LOM.jpg);
+	background-image: url(https://www.planwallpaper.com/static/images/10e39f13ddfb80570f3e44fb2016cb76.jpg);
 	background-size: cover;
-	height: 20vh;
-	padding: 50vh 0% 5% 1%;;
+    width: 100%;
+	padding: 60vh 0% 5% 1%;;
 
 }
 
-@media screen and (min-width: 600px){
+@media screen and (min-width: 800px){
 	main{
 	    margin: auto;
 	    width: 70%;
